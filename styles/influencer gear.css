@@ -48,6 +48,21 @@ header {
   display: none;
 }
 
+/* nav section ends  */
+
+/* journey section styles  */
+.journey{
+  display: flex;
+}
+.journey-title{
+  color: #3A3A3A;
+font-size: 3.25rem;
+font-weight: 700;
+
+
+}
+
+
 /* Responsive styles  */
 /* for small screen styles  */
 @media screen and (max-width: 570px) {
