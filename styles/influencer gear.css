@@ -54,8 +54,7 @@ header {
 .journey {
   display: flex;
   margin: 0 120px;
-  justify-content: space-between;
-  
+  justify-content: space-evenly;
 }
 
 .journey-title {
@@ -65,7 +64,6 @@ header {
   margin: 0;
 }
 .journey-description {
-  width: 80%;
   font-weight: 700;
   font-size: 1rem;
   color: #3a3a3a;
@@ -82,17 +80,37 @@ header {
 .Preebook-pic {
   width: 20px;
 }
-.journey-pic{
-  
-  
-}
-.journey-pic img{
+.journey-pic {
   width: 400px;
-  height: 400px;
+}
+.journey-pic img {
+  width: 100%;
   padding-top: 30px;
   background: url(../images/Circle\ design.svg);
+  background-size: cover;
 }
 
+/* logo section styles  */
+.logo-section {
+  margin: 70px 210px;
+}
+.logo-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.logo-section hr {
+  height: 2px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
 
 /* Responsive styles  */
 /* for small screen styles  */
@@ -110,6 +128,17 @@ header {
   .small-scrn img {
     width: 20px;
   }
+  .journey {
+    margin: 0 20px;
+    justify-content: baseline;
+    flex-direction: column-reverse;
+  }
+  .journey-text {
+    text-align: center;
+  }
+  .logo-section {
+    margin: 70px 20px;
+  }
 }
 /* for medium screen styles  */
 @media screen and (min-width: 571px) and (max-width: 992px) {
@@ -125,5 +154,25 @@ header {
   }
   .nav-links ul {
     justify-content: center;
+  }
+  .journey {
+    margin: 0 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .journey-text {
+    text-align: center;
+  }
+  .logo-section {
+    margin: 70px 20px;
+  }
+  .journey-pic {
+    margin-top: 50px;
+    width: 400px;
+  }
+  .journey-pic img {
+    width: auto;
+    background: url(../images/Circle\ design.svg);
+    background-size: cover;
   }
 }
