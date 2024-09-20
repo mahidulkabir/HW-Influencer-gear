@@ -1,7 +1,83 @@
 /* google fonts for the page  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 
 /* common styles for the page  */
+.poppins {
+  font-family: "poppins", sans-serif;
+}
+.inter {
+  font-family: "inter", sans-serif;
+}
 
+/* header section styles  */
+/* nav section styles */
+/* for big scrn  */
+header {
+  margin: 80px 120px;
+}
+.big-scrn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.big-scrn a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.big-scrn img {
+  width: 20px;
+}
+/* for small scrn  */
+.small-scrn {
+  display: none;
+}
+
+/* Responsive styles  */
+/* for small screen styles  */
+@media screen and (max-width: 570px) {
+  header {
+    margin: 50px 20px;
+  }
+  .big-scrn {
+    display: none;
+  }
+  .small-scrn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .small-scrn img {
+    width: 20px;
+  }
+}
+/* for medium screen styles  */
+@media screen and (min-width: 571px) and (max-width: 992px) {
+  header {
+    margin: 50px 20px;
+  }
+  .big-scrn {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-title {
+    margin: auto;
+  }
+  .nav-links ul {
+    justify-content: center;
+  }
+}
